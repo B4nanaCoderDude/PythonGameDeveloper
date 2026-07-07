@@ -3,5 +3,16 @@ WIDTH=600
 HEIGHT=400
 def draw():
     screen.clear()
-    screen.draw.line((50,50),(150,100),"yellow")
+    screen.draw.line((-50,50),(150,100),"yellow")
+    screen.clear()
+    rect=Rect((20,40),(300,200))
+    screen.draw.rect(rect,"green")
+    screen.draw.filled_rect(rect,"red")
+    screen.clear()
+    screen.draw.circle((100,100),50,"purple")
+    screen.draw.filled_circle((200,200),50,"blue")
+    screen.clear()
+    #points=[(250,100),(150,300),(350,300)]
+    #screen.draw.polygon(points,"pink")polygon not supported on this version :(
+    screen.draw.text("Hello there! General Kenobi.",(100,100),color="white",fontsize=20)
 pgzrun.go()
